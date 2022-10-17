@@ -1,0 +1,18 @@
+#Ask user to enter their name
+print("Hello, please enter your name")
+userName = input()
+birthYear = 0
+
+print("Hello, " + userName + "!\n")
+
+#ask user to input their birth year
+print("Please input your birth year")
+birthYear = int(input())
+
+print(f'Thank you {userName} , you were born in {birthYear}.')
+
+#Using birth year ONLY determine current age
+
+CURRENT_YEAR = 2022
+
+print(f'Your name is {userName} you were born in {birthYear} that makes you approximately {CURRENT_YEAR - birthYear} years old.')
