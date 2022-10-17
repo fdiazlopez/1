@@ -1,0 +1,24 @@
+n = 0
+
+def factorial(n):
+           
+            if n == 0:
+                return 1
+            else:
+                return n * factorial(n-1)
+
+def findPrime(n): 
+
+             
+        if n > 1:
+            for i in range(2, n):
+                if (n % i) == 0:
+                    print(n, "is a prime number.")
+                else:
+                    print(n, "isn't a prime number." )
+
+def menu():
+    num = input("Would you like to see if a number is prime or factorial?: ")
+    num = int(input("Enter the number: "))
+    print(factorial(num))
+menu()
