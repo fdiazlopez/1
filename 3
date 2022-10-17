@@ -1,0 +1,17 @@
+users_Decision = (input("Would you like to guess a number from 1-50? "))
+
+if(users_Decision.lower() == "yes" or users_Decision == "sure"):
+    
+    users_Guess = int(input("What is your guess?: "))
+    
+    if(users_Guess == 13):
+        
+        print("Congratulations you just won two free nights at the hotel of your choosing! Thank you for playing.")
+        
+    elif(users_Guess >= 8 or users_Guess <= 18):
+    
+        print("You were very close. You won a 50 dollar gift card! Thank you for playing.")
+        
+else:
+    print("Goodbye.")
+    
